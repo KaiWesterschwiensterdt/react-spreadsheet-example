@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Spreadsheet, { CellBase, Matrix } from "react-spreadsheet";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 
 export default function App() {
