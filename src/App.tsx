@@ -6,18 +6,24 @@ import "./styles.css";
 export default function App() {
   const [data, setData] = useState<Matrix<CellBase<any>>>([
     [
-      { value: "1st", readOnly: true, className: "text-danger" },
-      { value: "2nd", className: "text-danger" },
-      { value: "3rd", readOnly: true },
-      { value: "4th", className: "font-weight-bold" },
-      { value: "5th" }
+      {
+        value: "redOnly + text-color",
+        readOnly: true,
+        className: "text-danger"
+      },
+      { value: "text-color", className: "text-danger" },
+      { value: "readOnly", readOnly: true },
+      { value: "readOnly + css", readOnly: true, className: "header-row" },
+      { value: "css", className: "header-row" },
+      { value: "no options" }
     ],
     [
       { value: "Strawberry" },
       { value: "Cookies" },
       { value: "Vanilla" },
       { value: "Chocolate" },
-      { value: "Citrus" }
+      { value: "Citrus" },
+      { value: "Green Apple" }
     ]
   ]);
 
